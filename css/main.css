@@ -1,12 +1,57 @@
-@media only screen and (max-width: 599px){
+.section-start{
 
 }
 
-@media only screen and (min-width: 600px) and (max-width: 1024px){
+
+.angular-bg{
+    position: absolute;
+    top:-20em;
+    height: 20em;
+    width: 100%;
+    background-color: #00FFD1;
+    z-index: -1;
 
 }
 
-@media only screen and (min-width: 1025px){
+.angular-bg:before {
+    content: "";
+    background: #00FFD1;
+    height: 40em;
+    transform: skewY(-2deg);
+    position: absolute;
+    top:40em;
+    left: 0;
+    right: 0;
+    z-index: -1;
+
+}
 
 
+.angular-bg:after {
+
+    content: "";
+    background: #00FFD1;
+    height: 18em;
+    transform: skewY(1deg);
+    position: absolute;
+    top:70em;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.start-image{
+    width: 20%;
+    position: absolute;
+    top:10em;
+    left: 10em;
+    right: 0;
+    z-index: 10;
+}
+
+.ellipse{
+    position: absolute;
+    top:0em;
+    left: 30em;
+    z-index: 100;
 }
