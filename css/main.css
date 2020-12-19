@@ -6,7 +6,6 @@
 
 }
 
-
 .angular-bg {
     position: absolute;
     top:-20em;
@@ -43,17 +42,36 @@
     z-index: -1;
 }
 
-.start-image {
-    width: 20%;
-    position: absolute;
-    left: 10em;
-    right: 0;
-    z-index: 10;
-}
+/*.start-image {*/
+/*    width: 20%;*/
+/*    position: absolute;*/
+/*    left: 10em;*/
+/*    right: 0;*/
+/*    z-index: 10;*/
+/*}*/
 
-.ellipse{
+.ellipse {
     position: absolute;
     top:0;
     left: 30em;
     z-index: 100;
+}
+
+.citation {
+    position: relative;
+    font-size: 1.5em;
+    z-index: 101;
+    margin-top: 2em;
+}
+
+@media screen and (min-width: 768px) {
+    .citation {
+        margin-top: 12em;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .image.start {
+        margin-top: 12em;
+    }
 }
