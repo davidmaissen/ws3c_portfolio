@@ -1,9 +1,13 @@
+.section {
+
+}
+
 .section-start{
 
 }
 
 
-.angular-bg{
+.angular-bg {
     position: absolute;
     top:-20em;
     height: 20em;
@@ -22,13 +26,11 @@
     top:40em;
     left: 0;
     right: 0;
+    margin-left: -3em;
     z-index: -1;
-
 }
 
-
 .angular-bg:after {
-
     content: "";
     background: #00FFD1;
     height: 18em;
@@ -37,13 +39,13 @@
     top:70em;
     left: 0;
     right: 0;
+    margin-left: -3em;
     z-index: -1;
 }
 
-.start-image{
+.start-image {
     width: 20%;
     position: absolute;
-    top:10em;
     left: 10em;
     right: 0;
     z-index: 10;
@@ -51,7 +53,7 @@
 
 .ellipse{
     position: absolute;
-    top:0em;
+    top:0;
     left: 30em;
     z-index: 100;
 }
