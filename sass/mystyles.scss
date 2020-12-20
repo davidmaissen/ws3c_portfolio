@@ -1,0 +1,10 @@
+@charset "utf-8";
+@import "../node_modules/bulma/sass/utilities/initial-variables";
+@import "../node_modules/bulma/sass/utilities/functions";
+
+// Custom styles (where not bulma's defaults should be used)
+$radius: 0px;
+$radius-small: 0px;
+$radius-large: 0px;
+
+@import "../node_modules/bulma/bulma.sass";
