@@ -7,19 +7,18 @@
 }
 
 .angular-bg {
-    position: absolute;
-    top:-20em;
-    height: 20em;
+    position: relative;
     width: 100%;
-    background-color: #00FFD1;
+    top: -20em;
+    background-color: #00FFA3;
     z-index: -1;
 
 }
 
 .angular-bg:before {
     content: "";
-    background: #00FFD1;
-    height: 40em;
+    background: #00FFA3;
+    height: 50em;
     transform: skewY(-2deg);
     position: absolute;
     top:40em;
@@ -31,8 +30,8 @@
 
 .angular-bg:after {
     content: "";
-    background: #00FFD1;
-    height: 18em;
+    background: #00FFA3;
+    height: 30em;
     transform: skewY(1deg);
     position: absolute;
     top:70em;
@@ -42,31 +41,89 @@
     z-index: -1;
 }
 
-/*.start-image {*/
-/*    width: 20%;*/
-/*    position: absolute;*/
-/*    left: 10em;*/
-/*    right: 0;*/
-/*    z-index: 10;*/
-/*}*/
+.angular-bg-contact {
+    position: relative;
+    width: 100%;
+    top: 20em;
+    height: 20em;
+    background-color: #4a4a4a;
+    z-index: -1;
 
-.ellipse {
+}
+
+.angular-bg-contact:before {
+    content: "";
+    background: #4a4a4a;
+    height: 10em;
+    transform: skewY(-2deg);
     position: absolute;
-    top:0;
-    left: 30em;
+    top:-5em;
+    left: 0;
+    right: 0;
+    margin-left: -3em;
+    z-index: -1;
+}
+
+.angular-bg-contact:after {
+    content: "";
+    background: #4a4a4a;
+    height: 35em;
+    position: absolute;
+    top:5em;
+    left: 0;
+    right: 0;
+    margin-left: -3em;
+    z-index: -1;
+}
+
+
+.start-image{
+    width: 20em;
+    position: absolute;
+    left: 10em;
+    right: 0;
+    z-index: 10;
+}
+
+
+.ellipse{
+    position: relative;
+    top: -58em;
+    left: 18em;
+    width: 40rem;
     z-index: 100;
 }
 
 .citation {
     position: relative;
-    font-size: 1.5em;
+    font-size: 2.5em;
     z-index: 101;
     margin-top: 2em;
 }
 
 .image.start {
     margin-top: 2em;
+    width: 80%;
+    right: 0;
+    z-index: 10;
 }
+
+
+/* Form */
+.speech-input{
+    position: relative;
+    top: -10.8em;
+    margin-bottom: -10em;
+    z-index: -1;
+
+}
+
+.input{
+    background-color: transparent;
+    border: none;
+    border-bottom: 3px solid #CCC;
+}
+
 
 @media screen and (min-width: 768px) {
     .citation {
