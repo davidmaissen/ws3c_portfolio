@@ -9,7 +9,8 @@
 .angular-bg {
     position: relative;
     width: 100%;
-    top: -20em;
+    top:-20em;
+    height: 30em;
     background-color: #00FFA3;
     z-index: -1;
 
@@ -18,23 +19,60 @@
 .angular-bg:before {
     content: "";
     background: #00FFA3;
-    height: 50em;
+    height: 30em;
     transform: skewY(-2deg);
     position: absolute;
-    top:40em;
+    top:-15em;
     left: 0;
     right: 0;
     margin-left: -3em;
     z-index: -1;
 }
 
+
 .angular-bg:after {
     content: "";
     background: #00FFA3;
-    height: 30em;
+    height: 35em;
     transform: skewY(1deg);
     position: absolute;
-    top:70em;
+    top:10em;
+    left: 0;
+    right: 0;
+    margin-left: -3em;
+    z-index: -1;
+}
+
+.angular-bg-small {
+    position: relative;
+    width: 100%;
+    top:-10em;
+    background-color: #00FFA3;
+    z-index: -1;
+
+}
+
+.angular-bg-small:before {
+    content: "";
+    background: #00FFA3;
+    height: 15em;
+    transform: skewY(-2deg);
+    position: absolute;
+    top:0em;
+    left: 0;
+    right: 0;
+    margin-left: -3em;
+    z-index: -1;
+}
+
+
+.angular-bg-small:after {
+    content: "";
+    background: #00FFA3;
+    height: 10em;
+    transform: skewY(1deg);
+    position: absolute;
+    top:10em;
     left: 0;
     right: 0;
     margin-left: -3em;
@@ -78,19 +116,35 @@
 
 
 .start-image{
-    width: 20em;
+    width: 25em;
     position: absolute;
     left: 10em;
     right: 0;
     z-index: 10;
 }
 
+.section-heading{
+    width: 20em;
+    margin-bottom: -5em;
+}
+
+.section-heading svg{
+    position: relative;
+    top: -15em;
+}
+
+.svg-content {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 
 .ellipse{
-    position: relative;
-    top: -58em;
-    left: 18em;
-    width: 40rem;
+    position: absolute;
+    top: -15em;
+    left: 25em;
+    width: 40em;
     z-index: 100;
 }
 
@@ -102,10 +156,7 @@
 }
 
 .image.start {
-    margin-top: 2em;
-    width: 80%;
-    right: 0;
-    z-index: 10;
+
 }
 
 
