@@ -29,7 +29,6 @@
     z-index: -1;
 }
 
-
 .angular-bg:after {
     content: "";
     background: #00FFA3;
@@ -130,7 +129,7 @@
 
 .section-heading svg{
     position: relative;
-    top: -15em;
+    top: -16em;
 }
 
 .svg-content {
@@ -145,7 +144,6 @@
     top: -15em;
     left: 25em;
     width: 40em;
-    z-index: 100;
 }
 
 .citation {
@@ -162,14 +160,12 @@
     height: 45em;
 }
 
-
 /* Form */
 .speech-input{
     position: relative;
     top: -10.8em;
     margin-bottom: -10em;
     z-index: -1;
-
 }
 
 .input{
@@ -178,11 +174,14 @@
     border-bottom: 3px solid #CCC;
 }
 
+.input::placeholder {
+    color: #FFF;
+}
 
 @media screen and (min-width: 768px) {
-    .citation {
-        margin-top: 12em;
-    }
+    /*.citation {*/
+    /*    margin-top: 12em;*/
+    /*}*/
 }
 
 @media screen and (min-width: 1024px) {
