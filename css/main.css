@@ -155,8 +155,11 @@
     margin-top: 2em;
 }
 
-.image.start {
-
+.shadow{
+    position: relative;
+    top: -2em;
+    width: 40em!important;
+    height: 45em;
 }
 
 
