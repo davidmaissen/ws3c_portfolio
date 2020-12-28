@@ -123,13 +123,20 @@
 }
 
 .section-heading{
-    width: 20em;
-    margin-bottom: -5em;
+    position: relative;
+    height: 20em;
 }
 
-.section-heading svg{
+.section-heading-title{
     position: relative;
-    top: -16em;
+    top: 10em;
+}
+
+
+.section-heading svg{
+    width: 17em !important;
+    height: 17em !important;
+    position: relative;
 }
 
 .svg-content {
