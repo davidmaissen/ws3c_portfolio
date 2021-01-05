@@ -10,7 +10,7 @@
     position: relative;
     width: 100%;
     top:-20em;
-    height: 30em;
+    height: 20em;
     background-color: #00FFA3;
     z-index: -1;
 
@@ -33,9 +33,9 @@
     content: "";
     background: #00FFA3;
     height: 35em;
-    transform: skewY(1deg);
+    transform: skewY(2deg);
     position: absolute;
-    top:10em;
+    top: 0;
     left: 0;
     right: 0;
     margin-left: -3em;
@@ -45,33 +45,32 @@
 .angular-bg-small {
     position: relative;
     width: 100%;
-    top:-10em;
+    height: 5em;
+    margin-top: 5em;
     background-color: #00FFA3;
     z-index: -1;
-
 }
 
 .angular-bg-small:before {
     content: "";
     background: #00FFA3;
-    height: 15em;
+    height: 10em;
     transform: skewY(-2deg);
     position: absolute;
-    top:0em;
+    top:-2em;
     left: 0;
     right: 0;
     margin-left: -3em;
     z-index: -1;
 }
 
-
 .angular-bg-small:after {
     content: "";
     background: #00FFA3;
-    height: 10em;
+    height: 15em;
     transform: skewY(1deg);
     position: absolute;
-    top:10em;
+    top:2.7em;
     left: 0;
     right: 0;
     margin-left: -3em;
@@ -81,11 +80,8 @@
 .angular-bg-contact {
     position: relative;
     width: 100%;
-    top: 20em;
-    height: 20em;
     background-color: #4a4a4a;
     z-index: -1;
-
 }
 
 .angular-bg-contact:before {
@@ -104,15 +100,19 @@
 .angular-bg-contact:after {
     content: "";
     background: #4a4a4a;
-    height: 35em;
     position: absolute;
-    top:5em;
+    height: 10em;
+    transform: skewY(1deg);
     left: 0;
     right: 0;
     margin-left: -3em;
     z-index: -1;
 }
 
+#section-contact {
+    background: #4a4a4a;
+    padding-top: 1em;
+}
 
 .start-image{
     width: 25em;
@@ -131,7 +131,6 @@
     position: relative;
     top: 10em;
 }
-
 
 .section-heading svg{
     width: 17em !important;
@@ -155,9 +154,8 @@
 
 .citation {
     position: relative;
-    font-size: 2.5em;
     z-index: 101;
-    margin-top: 2em;
+    margin-top: 3em;
 }
 
 .shadow{
@@ -172,30 +170,38 @@
     position: relative;
     top: -10.8em;
     margin-bottom: -10em;
-    z-index: -1;
 }
 
-.input{
+.input, .input:focus {
     background-color: transparent;
     border: none;
     border-bottom: 3px solid #CCC;
+    box-shadow: none;
+}
+
+.input:focus {
+    border-bottom: 3px solid #00FFA3;
+}
+
+.textarea {
+    z-index: 1;
 }
 
 .input::placeholder {
     color: #FFF;
 }
 
-@media screen and (min-width: 768px) {
-    /*.citation {*/
-    /*    margin-top: 12em;*/
-    /*}*/
-}
+/*@media screen and (min-width: 768px) {*/
+/*    !*.citation {*!*/
+/*    !*    margin-top: 12em;*!*/
+/*    !*}*!*/
+/*}*/
 
-@media screen and (min-width: 1024px) {
-    .section:not(#section-start) {
-        margin-top: 10em;
-    }
-}
+/*@media screen and (min-width: 1024px) {*/
+/*    .section:not(#section-start) {*/
+/*        margin-top: 10em;*/
+/*    }*/
+/*}*/
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     .image.start {
