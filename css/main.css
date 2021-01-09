@@ -127,7 +127,7 @@
 
 .section-heading-title{
     position: relative;
-    top: 10em;
+    top: 9.5em;
 }
 
 .section-heading svg{
@@ -161,11 +161,15 @@
 }
 
 .shadow{
-    margin-left: -3em;
-    margin-bottom: -3em;
+    margin-left: -6em;
+    margin-bottom: -5em;
     margin-right: 3em;
     z-index: -1;
     left: 0;
+}
+
+.social-links{
+
 }
 
 /* Form */
@@ -193,18 +197,6 @@
 .input::placeholder {
     color: #FFF;
 }
-
-/*@media screen and (min-width: 768px) {*/
-/*    !*.citation {*!*/
-/*    !*    margin-top: 12em;*!*/
-/*    !*}*!*/
-/*}*/
-
-/*@media screen and (min-width: 1024px) {*/
-/*    .section:not(#section-start) {*/
-/*        margin-top: 10em;*/
-/*    }*/
-/*}*/
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     .image.start {
