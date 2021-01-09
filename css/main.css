@@ -1,18 +1,9 @@
-.section {
-
-}
-
-.section-start{
-
-}
-
 .angular-bg {
     position: relative;
     width: 100%;
     top:-20em;
     height: 20em;
     z-index: -1;
-
 }
 
 .angular-bg:before {
@@ -181,6 +172,10 @@
     background-size: 100% 75%;
     transition: background-size 0.25s ease-in;
  }
+
+a.navbar-item:hover {
+    color: #000;
+}
 
 /* ---------------------------------------- */
 
