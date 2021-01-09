@@ -168,9 +168,22 @@
     left: 0;
 }
 
-.social-links{
+/* Magical underline; Source: https://codepen.io/Wking/pen/BdmpVx */
+
+.underline--magical {
+    background-repeat: no-repeat;
+    background-size: 100% 0.2em;
+    background-position: 0 88%;
 
 }
+.underline--magical:hover {
+    background-image: linear-gradient(120deg, #00FFA3 0%, #00FFA3 100%);
+    background-size: 100% 75%;
+    transition: background-size 0.25s ease-in;
+ }
+
+/* ---------------------------------------- */
+
 
 /* Form */
 .speech-input{

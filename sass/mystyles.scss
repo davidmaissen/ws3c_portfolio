@@ -9,4 +9,60 @@ $radius-large: 0px;
 
 $turquoise: #00FFA3;
 
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/3cf7ea");
+
+@font-face {
+  font-family: 'Graphit-Bold';
+  src: url('../webFonts/Graphit-Bold/font.woff2') format('woff2'), url('../webFonts/Graphit-Bold/font.woff') format('woff');
+}
+@font-face {
+  font-family: 'Graphit-LightItalic';
+  src: url('../webFonts/Graphit-LightItalic/font.woff2') format('woff2'), url('../webFonts/Graphit-LightItalic/font.woff') format('woff');
+}
+@font-face {
+  font-family: 'Graphit-BoldItalic';
+  src: url('../webFonts/Graphit-BoldItalic/font.woff2') format('woff2'), url('../webFonts/Graphit-BoldItalic/font.woff') format('woff');
+}
+@font-face {
+  font-family: 'Graphit-Black';
+  src: url('../webFonts/Graphit-Black/font.woff2') format('woff2'), url('../webFonts/Graphit-Black/font.woff') format('woff');
+}
+@font-face {
+  font-family: 'Graphit-Light';
+  src: url('../webFonts/Graphit-Light/font.woff2') format('woff2'), url('../webFonts/Graphit-Light/font.woff') format('woff');
+}
+@font-face {
+  font-family: 'Graphit-Medium';
+  src: url('../webFonts/Graphit-Medium/font.woff2') format('woff2'), url('../webFonts/Graphit-Medium/font.woff') format('woff');
+}
+@font-face {
+  font-family: 'Graphit-RegularItalic';
+  src: url('../webFonts/Graphit-RegularItalic/font.woff2') format('woff2'), url('../webFonts/Graphit-RegularItalic/font.woff') format('woff');
+}
+@font-face {
+  font-family: 'Graphit-MediumItalic';
+  src: url('../webFonts/Graphit-MediumItalic/font.woff2') format('woff2'), url('../webFonts/Graphit-MediumItalic/font.woff') format('woff');
+}
+@font-face {
+  font-family: 'Graphit-Thin';
+  src: url('../webFonts/Graphit-Thin/font.woff2') format('woff2'), url('../webFonts/Graphit-Thin/font.woff') format('woff');
+}
+@font-face {
+  font-family: 'Graphit-Regular';
+  src: url('../webFonts/Graphit-Regular/font.woff2') format('woff2'), url('../webFonts/Graphit-Regular/font.woff') format('woff');
+}
+@font-face {
+  font-family: 'Graphit-BlackItalic';
+  src: url('../webFonts/Graphit-BlackItalic/font.woff2') format('woff2'), url('../webFonts/Graphit-BlackItalic/font.woff') format('woff');
+}
+@font-face {
+  font-family: 'Graphit-ThinItalic';
+  src: url('../webFonts/Graphit-ThinItalic/font.woff2') format('woff2'), url('../webFonts/Graphit-ThinItalic/font.woff') format('woff');
+}
+
+// Update Bulma's global variables
+$family-sans-serif: "Graphit", sans-serif;
+
+
 @import "../node_modules/bulma/bulma.sass";
