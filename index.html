@@ -7,33 +7,56 @@
 
     <link rel="stylesheet" href="css/mystyles.css">
     <link rel="stylesheet" href="css/main.css"/>
+    <link href="node_modules/bulma-carousel/dist/css/bulma-carousel.min.css" rel="stylesheet">
+    <script src="node_modules/bulma-carousel/dist/js/bulma-carousel.min.js"></script>
 
     <script src="js/mobileNavigation.js"></script>
+
 </head>
 <body>
 <!--- NAV --->
-<nav class="navbar" role="navigation" aria-label="main navigation">
+<nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
-
-        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <a role="button" class="navbar-burger " aria-label="menu" aria-expanded="false" data-target="navbar">
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
         </a>
     </div>
 
-    <div id="navbarBasicExample" class="navbar-menu">
+
+    <div id="navbar" class="navbar-menu">
         <div class="navbar-end">
-            <a class="navbar-item underline--magical" href="#section-skills">
+            <div class="navbar-item mr-6">
+                <div class="field is-grouped">
+                    <p class="control mr-5">
+                        <span class="icon">
+                          <a class="" href="https://bulma.io">
+                            <img class="image m-1" src="img/002-linkedin-logo.png"/>
+                          </a>
+                        </span>
+                    </p>
+                    <p class="control">
+                        <span class="icon">
+                          <a class="" href="https://bulma.io">
+                            <img class="image m-1" src="img/001-facebook.png"/>
+                          </a>
+                        </span>
+                    </p>
+
+
+                </div>
+            </div>
+            <a class="navbar-item underline--magical is-size-5 has-text-weight-bold" href="#section-skills">
                 skills
             </a>
-            <a class="navbar-item underline--magical" href="#section-aboutMe">
+            <a class="navbar-item underline--magical is-size-5 has-text-weight-bold" href="#section-aboutMe">
                 about me
             </a>
-            <a class="navbar-item underline--magical" href="#section-projects">
+            <a class="navbar-item underline--magical is-size-5 has-text-weight-bold" href="#section-projects">
                 projects
             </a>
-            <a class="navbar-item underline--magical" href="#section-contact">
+            <a class="navbar-item underline--magical is-size-5 has-text-weight-bold" href="#section-contact">
                 contact
             </a>
 
@@ -42,18 +65,19 @@
 </nav>
 <!--- NAV --->
 <!-- SECTIONS -->
+
 <section id="section-start" class="section p-0">
 
     <div class="container is-fluid">
 
         <div class="columns is-multiline">
             <div class="column is-offset-1 is-11 mb-6">
-                <h1 class="title is-2 has-text-weight-normal">
+                <h1 class="title is-1 has-text-weight-normal">
                     <strong class="has-text-weight-bold">Linus</strong> Kohler
                 </h1>
             </div>
 
-            <div class="column is-5 is-offset-1">
+            <div class="column is-5-desktop is-11-tablet is-offset-1">
                 <div class="image start">
                     <div class="ellipse is-overlay">
                         <svg viewBox="0 0 590 584">
@@ -66,15 +90,13 @@
 
             </div>
 
-            <div class="column is-4 is-offset-1">
-                <p class="citation is-size-3">
-                    "Conscientious, communicative and organised Software Engineer with a specialization in Design and
-                    Management, always seeking a new challenge in his field of passion."
+            <div class="column is-3-desktop is-11-tablet is-offset-1 ">
+                <p class="citation is-size-2">
+                    «Conscientious, communicative and organised Software Engineer with a specialization in Design and
+                    Management, always seeking a new challenge in his field of passion.»
                 </p>
             </div>
             <div class="column is-1"></div>
-
-
         </div>
     </div>
 
@@ -82,7 +104,7 @@
 <div class="angular-bg has-background-primary"></div>
 <section id="section-skills" class="section mt-0">
     <div class="container is-widescreen">
-        <div class ="section-heading ">
+        <div class="section-heading ">
             <div class="column is-12 section-heading-title">
                 <h1 class="title">
                     skills
@@ -113,17 +135,17 @@
 <div class="angular-bg-small has-background-primary"></div>
 <section id="section-aboutMe" class="section">
     <div class="container is-widescreen">
-        <div class ="section-heading ">
+        <div class="section-heading ">
             <div class="column is-12 section-heading-title">
-                <h1 class="title">
+                <h1 class="title mt-5">
                     about me
                 </h1>
             </div>
             <div class="column is-12 is-overlay">
-                <svg viewBox="0 0 590 584" width="100%" height="100%">
-                    <path d="M53.2251 292.906C53.7696 245.353 68.403 199.029 95.2749 159.792C122.147 120.556 160.05 90.1684 204.192 72.4736C248.334 54.7787 296.732 50.5708 343.265 60.382C389.799 70.1932 432.378 93.5828 465.618 127.593C498.859 161.603 521.267 204.707 530.01 251.453C538.754 298.198 533.439 346.487 514.738 390.212C496.037 433.938 464.79 471.136 424.948 497.102C385.107 523.069 338.46 536.638 290.906 536.093L292.1 431.849C319.036 432.157 345.458 424.471 368.026 409.763C390.593 395.055 408.292 373.985 418.885 349.217C429.478 324.45 432.488 297.098 427.536 270.619C422.584 244.141 409.891 219.726 391.062 200.461C372.234 181.197 348.116 167.948 321.758 162.391C295.4 156.833 267.986 159.217 242.982 169.24C217.979 179.263 196.509 196.475 181.288 218.7C166.067 240.925 157.778 267.164 157.47 294.1L53.2251 292.906Z"
-                          fill="#FFFFFF"/>
+                <svg width="100%" height="100%" viewBox="0 0 261 203">
+                    <path d="M3.82851 142.295C4.00413 126.956 7.19925 111.802 13.2314 97.6978C19.2636 83.5938 28.0148 70.816 38.9852 60.0939C49.9556 49.3719 62.9304 40.9156 77.1689 35.208C91.4073 29.5003 106.631 26.653 121.969 26.8286C137.308 27.0042 152.462 30.1994 166.566 36.2316C180.671 42.2638 193.448 51.0149 204.17 61.9853C214.892 72.9557 223.349 85.9305 229.056 100.169C234.764 114.407 237.611 129.631 237.436 144.97L186.793 144.39C186.893 135.701 185.28 127.078 182.047 119.013C178.814 110.948 174.024 103.599 167.951 97.3848C161.878 91.1708 154.64 86.2139 146.651 82.7971C138.662 79.3802 130.078 77.5704 121.39 77.4709C112.701 77.3715 104.078 78.9843 96.0131 82.2173C87.948 85.4503 80.5987 90.2402 74.3847 96.3135C68.1707 102.387 63.2138 109.625 59.7969 117.614C56.3801 125.603 54.5703 134.186 54.4708 142.875L3.82851 142.295Z" fill="white"/>
                 </svg>
+
             </div>
         </div>
         <div class="columns is-multiline">
@@ -134,10 +156,10 @@
                 </div>
             </div>
             <div class="column is-3 is-offset-1">
-                <div class="block">
+                <div class="block is-size-5">
                     I am Linus Kohler, a young software engineer, living in a small town in the heart of Switzerland.
                 </div>
-                <div class="block">
+                <div class="block is-size-5">
                     I am fascinated by the huge potential and almost endless possibilities of computer science,
                     especially in the software development. I love to create completely new worlds in computer games.
                     But also designing and implementing ways to improve the everyday tasks in IT is part of my passion.
@@ -147,36 +169,172 @@
         <div class="columns is-mobile">
             <div class="column is-flex m-2">
                 <img class="image is-32x32 m-1" src="img/002-linkedin-logo.png"/>
-                <img class="image is-32x32 m-1" src="img/001-facebook.png"/></div>
-                <div class="column is-offset-1 is-6 mb-6">
-                    <h1 class="title is-2 has-text-weight-normal">
-                        <strong class="has-text-weight-bold">Linus</strong> Kohler
-                    </h1>
-                </div>
+                <img class="image is-32x32 m-1" src="img/001-facebook.png"/>
+            </div>
+            <div class="column is-offset-1 is-6 mb-6">
+                <h1 class="title is-2 has-text-weight-normal">
+                    <strong class="has-text-weight-bold">Linus</strong> Kohler
+                </h1>
+            </div>
         </div>
     </div>
 </section>
+
+
+<section id="section-blog" class="section is-full-widescreen has-background-grey-dark">
+    <div class="container" style="overflow:hidden;">
+        <div class="columns">
+            <div class="column is-8 is-offset-2">
+                <div class="ls-section-content has-text-centered"><h3 class="title has-text-light">My Blog</h3>
+                </div>
+            </div>
+        </div>
+        <!-- Start Carousel -->
+        <div id="carousel" class="carousel">
+            <div class="item">
+
+                <div class="image">
+
+                    <img src="img/miro-image.jpg"/>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <p class="tag is-black mb-4">
+                            Miro
+                        </p>
+                        <p class="tag is-black mb-4">
+                            Collaboration
+                        </p>
+                        <p class="title is-4">
+                            Miro - or how to digitize post-its ...
+                        </p>
+                        <div class="content">
+                            In the last few weeks, many of us have become pros at using online meetings. Those who are
+                            not yet, now have the chance to remedy the situation with the online whiteboard Miro and
+                            finally organize their creative thoughts again in the form of Post-its and Co.
+                        </div>
+                    </div>
+                    <footer class="card-footer">
+                        <div class="container">
+                            <a href="blog/blog-detail-1.html" class="is-pulled-right m-4">Read more</a>
+                        </div>
+                    </footer>
+                </div>
+
+            </div>
+            <div class="item">
+
+                <div class="image">
+                    <img src="img/figma-moodboard.jpg"/>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <p class="tag is-black mb-4">
+                            Boards
+                        </p>
+                        <p class="tag is-black mb-4">
+                            Design
+                        </p>
+                        <p class="title is-4">
+                            Capture and share ideas!
+                        </p>
+                        <div class="content">
+                            Moodboards capture initial ideas, map color and font concepts, and thus support the entire
+                            design process. For customers, mood boards can also be the basis for presentations and unite
+                            the opinions and ideas of all members in teams.
+                        </div>
+                    </div>
+                    <footer class="card-footer">
+                        <div class="container">
+                            <a href="blog/blog-detail-2.html" class="is-pulled-right m-4">Read more</a>
+                        </div>
+                    </footer>
+                </div>
+
+            </div>
+            <div class="item">
+
+                <div class="image">
+                    <img src="img/handset_photoshop_3d-effect-2-1399x1000.jpg"/>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <p class="tag is-black mb-4">
+                            Photoshop
+                        </p>
+                        <p class="tag is-black mb-4">
+                            Effects
+                        </p>
+                        <p class="title is-4">
+                            3D effect in just a few clicks
+                        </p>
+                        <div class="content">
+                            The term anaglyph process is probably unknown to many, but we all know the 3D glasses with
+                            the color filters and the images where the channels are somehow shifted. If you look at such a picture
+                            with the 3D color filter glasses, you get a 3D effect.
+                        </div>
+                    </div>
+                    <footer class="card-footer">
+                        <div class="container">
+                            <a href="blog/blog-detail-3.html" class="is-pulled-right m-4">Read more</a>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+            <div class="item">
+
+                <div class="image">
+                    <img src="img/E-Book_Outdoor-Fotografie_Cover-1-1600x899.jpg"/>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <p class="tag is-black mb-4">
+                            E-Books
+                        </p>
+                        <p class="tag is-black mb-4">
+                            Photography
+                        </p>
+                        <p class="title is-4">
+                            Digital guide for outdoor photography
+                        </p>
+                        <div class="content">
+                            Outdoor photography has many facets, be it untouched nature, architecture or the creative play of
+                            light and shadow. It is precisely this diversity that makes capturing these special moments a
+                            challenge.
+                        </div>
+                    </div>
+                    <footer class="card-footer">
+                        <div class="container">
+                            <a href="blog/blog-detail-4.html" class="is-pulled-right m-4">Read more</a>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+        <!-- End Carousel -->
+    </div>
+</section>
+
 <section id="section-projects" class="section hero is-fullheight">
     <div class="container is-widescreen">
-        <div class ="section-heading ">
+        <div class="section-heading ">
             <div class="column is-12 section-heading-title">
-                <h1 class="title">
+                <h1 class="title mt-6">
                     projects
                 </h1>
             </div>
-            <div class=" column is-12 is-overlay">
-                <svg viewBox="0 0 590 584" width="100%" height="100%">
-                    <path d="M53.2251 292.906C53.7696 245.353 68.403 199.029 95.2749 159.792C122.147 120.556 160.05 90.1684 204.192 72.4736C248.334 54.7787 296.732 50.5708 343.265 60.382C389.799 70.1932 432.378 93.5828 465.618 127.593C498.859 161.603 521.267 204.707 530.01 251.453C538.754 298.198 533.439 346.487 514.738 390.212C496.037 433.938 464.79 471.136 424.948 497.102C385.107 523.069 338.46 536.638 290.906 536.093L292.1 431.849C319.036 432.157 345.458 424.471 368.026 409.763C390.593 395.055 408.292 373.985 418.885 349.217C429.478 324.45 432.488 297.098 427.536 270.619C422.584 244.141 409.891 219.726 391.062 200.461C372.234 181.197 348.116 167.948 321.758 162.391C295.4 156.833 267.986 159.217 242.982 169.24C217.979 179.263 196.509 196.475 181.288 218.7C166.067 240.925 157.778 267.164 157.47 294.1L53.2251 292.906Z"
-                          fill="#00FFA3"/>
+            <div class=" column is-12 is-overlay" style="margin-top: -2em">
+                <svg width="100%" height="100%" viewBox="0 0 135 165">
+                    <path d="M3.82851 139.295C4.00413 123.956 7.19925 108.802 13.2314 94.6978C19.2636 80.5938 28.0148 67.816 38.9852 57.0939C49.9556 46.3719 62.9304 37.9156 77.1689 32.208C91.4073 26.5003 106.631 23.653 121.969 23.8286L121.39 74.4709C112.701 74.3715 104.078 75.9843 96.0131 79.2173C87.948 82.4503 80.5987 87.2402 74.3847 93.3135C68.1707 99.3868 63.2138 106.625 59.7969 114.614C56.3801 122.603 54.5703 131.186 54.4708 139.875L3.82851 139.295Z" fill="#00FFA3"/>
                 </svg>
             </div>
         </div>
         <div class="columns is-multiline">
             <div class="column is-4">
-                <div class="image">
-                    <img src="img/Teaser1.png" alt="portrait">
-                </div>
                 <div class="card">
+                    <div class="card-image">
+                        <img src="img/Teaser1.png" alt="portrait">
+                    </div>
                     <div class="card-content">
                         <p class="tag is-black mb-4">
                             Game design
@@ -190,8 +348,10 @@
                         <div class="content">
                             Another small turn based strategy title with nice-looking 3D low poly style graphics.
                             You are the commander of a protest march in a typical Western European city.
-                            The protest contains several different groups, which you all need to use effectively to reach given target points on a defined protest route.
-                            The goal is to get attention on the street, but do not lose too much acceptance by caused destruction.
+                            The protest contains several different groups, which you all need to use effectively to
+                            reach given target points on a defined protest route.
+                            The goal is to get attention on the street, but do not lose too much acceptance by caused
+                            destruction.
                         </div>
                     </div>
                     <footer class="card-footer">
@@ -202,10 +362,10 @@
                 </div>
             </div>
             <div class="column is-4">
-                <div class="image">
-                    <img src="img/Teaser2.png" alt="portrait">
-                </div>
                 <div class="card">
+                    <div class="card-image">
+                        <img src="img/Teaser2.png" alt="portrait">
+                    </div>
                     <div class="card-content">
                         <p class="tag is-black mb-4">
                             WebGL
@@ -218,7 +378,8 @@
                         </p>
                         <div class="content">
                             Ultra Mail is a prototype project to show the possibilities of automated email generation.
-                            Ultra Mail was developed with JavaFX and later completely rewritten and extendend as Ultra Mail 2 with Unity and WebGL, to work without any local installation.
+                            Ultra Mail was developed with JavaFX and later completely rewritten and extendend as Ultra
+                            Mail 2 with Unity and WebGL, to work without any local installation.
                         </div>
                     </div>
                     <footer class="card-footer">
@@ -229,10 +390,11 @@
                 </div>
             </div>
             <div class="column is-4">
-                <div class="image">
-                    <img src="img/Teaser3.png" alt="portrait">
-                </div>
+
                 <div class="card">
+                    <div class="card-image">
+                        <img src="img/Teaser3.png" alt="portrait">
+                    </div>
                     <div class="card-content">
                         <p class="tag is-black mb-4">
                             Game design
@@ -251,11 +413,6 @@
                             <a href="projects/example1.html" class="is-pulled-right m-4">Read more</a>
                         </div>
                     </footer>
-                </div>
-            </div>
-            <div class="column is-12">
-                <div class="control">
-                    <a class="button is-light is-pulled-right">All projects</a>
                 </div>
             </div>
         </div>
@@ -305,5 +462,19 @@
     </div>
 </section>
 <!-- SECTIONS -->
+<script>
+    bulmaCarousel.attach('.carousel', {
+        slidesToScroll: 1,
+        slidesToShow: 3,
+        infinite: true,
+        autoplay:true,
+        pagination: false,
+        breakpoints: [{changePoint: 480, slidesToShow: 1, slidesToScroll: 1}, {
+            changePoint: 640,
+            slidesToShow: 2,
+            slidesToScroll: 2
+        }, {changePoint: 768, slidesToShow: 3, slidesToScroll: 3}]
+    });
+</script>
 </body>
 </html>

@@ -1,3 +1,9 @@
+.navbar{
+    z-index: 200!important;
+}
+.item{
+    height: 100%;
+}
 .angular-bg {
     position: relative;
     width: 100%;
@@ -35,7 +41,6 @@
 .angular-bg-small {
     position: relative;
     width: 100%;
-    height: 5em;
     margin-top: 5em;
     z-index: -1;
 }
@@ -136,8 +141,8 @@
 
 .ellipse{
     position: absolute;
-    top: -40%;
-    left: 45%;
+    top: -35%;
+    left: 40%;
     width: 100%;
 }
 
@@ -169,8 +174,9 @@
 }
 .underline--magical:hover {
     background-image: linear-gradient(120deg, #00FFA3 0%, #00FFA3 100%);
-    background-size: 100% 75%;
+    background-size: 100% 40%;
     transition: background-size 0.25s ease-in;
+    color: #4a4a4a !important;
  }
 
 a.navbar-item:hover {
