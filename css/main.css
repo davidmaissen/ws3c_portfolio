@@ -228,8 +228,3 @@ a.navbar-item:hover {
     }
 }
 
-@media screen and (min-width: 1024px) {
-    .card-content {
-        min-height: 21em;
-    }
-}
