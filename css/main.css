@@ -184,7 +184,17 @@ a.navbar-item:hover {
 }
 
 /* ---------------------------------------- */
+/*.slider-item .image {*/
+/*    height: 26.1em;*/
+/*}*/
 
+.slider-item {
+    padding: 2em;
+}
+
+.card {
+    border-radius: 0;
+}
 
 /* Form */
 .speech-input{
@@ -215,5 +225,11 @@ a.navbar-item:hover {
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     .image.start {
         margin-top: 12em;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .card-content {
+        min-height: 21em;
     }
 }
